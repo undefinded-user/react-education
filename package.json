@@ -1,0 +1,27 @@
+{
+  "name": "react-education",
+  "version": "1.0.0",
+  "description": "My react education repo",
+  "main": "./src/index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/undefinded-user/react-education.git"
+  },
+  "keywords": [
+    "react",
+    "react-dom",
+    "react-basis"
+  ],
+  "author": "undefined-user",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/undefinded-user/react-education/issues"
+  },
+  "homepage": "https://github.com/undefinded-user/react-education#readme"
+}
