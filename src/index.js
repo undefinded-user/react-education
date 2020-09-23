@@ -3,14 +3,40 @@ import ReactDOM from 'react-dom'
 
 
 
-function MyApp () {
-	return (
-		<>
-			<h1>Hellow everyone</h1>
-			<p>This message is from React</p>
-			<p>My first functional component</p>
-		</>
+class App extends React.Component {
+	constructor(){
+		super()
+		this.state ={
+			firstName: ''
+		}
+		this.handleChange = this.handleChange.bind(this)
+	}
+	handleChange(event){
+		const {value, name} = event.target
+		this.setState({
+			[name] : value
+		})
+	}
+	render(){
+		return(
+			<main>
+				<form>
+					<input
+						type="text"
+						name="firstName"
+						value={this.state.firstName}
+						onChange={this.handleChange}
+						placeholder="First Name"
+					/>
+
+				</form>
+
+				<p>First Name: {this.state.firstName}</p>
+
+			</main>
+
 		)
+	}
 }
 
-ReactDOM.render(<MyApp /> , document.getElementById("root"))
+ReactDOM.render(<App /> , document.getElementById("root"))
