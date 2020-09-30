@@ -3,14 +3,15 @@ import ReactDOM from 'react-dom'
 
 
 
-function MyApp () {
-	return (
-		<>
-			<h1>Hellow everyone</h1>
-			<p>This message is from React</p>
-			<p>My first functional component</p>
-		</>
+class Main extends React.Component{
+	render() {
+		return (
+			<div className="container">
+				<h1>Hellow everyone</h1>
+			</div>
 		)
+	}
+	
 }
 
-ReactDOM.render(<MyApp /> , document.getElementById("root"))
+ReactDOM.render(<Main/> , document.getElementById("root"))
